@@ -42,7 +42,7 @@ static NSPersistentStore *defaultPersistentStore_ = nil;
 
 + (NSURL *) MR_urlForStoreName:(NSString *)storeFileName
 {
-    NSString *pathForStoreName = [[self MR_applicationStorageDirectory] stringByAppendingPathComponent:storeFileName];
+    NSString *pathForStoreName = [[self MR_applicationDocumentsDirectory] stringByAppendingPathComponent:storeFileName];
     return [NSURL fileURLWithPath:pathForStoreName];
 }
 
